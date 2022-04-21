@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/TodoApp/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
         <entry key="..\:/TodoApp/app/src/main/res/layout/fragment_new_todo.xml" value="0.20416666666666666" />
-        <entry key="..\:/TodoApp/app/src/main/res/layout/fragment_todo_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/TodoApp/app/src/main/res/layout/fragment_todo_list.xml" value="0.17" />
         <entry key="..\:/TodoApp/app/src/main/res/layout/todo_row.xml" value="0.20416666666666666" />
         <entry key="..\:/TodoApp/app/src/main/res/menu/row_item_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/TodoApp/app/src/main/res/menu/todo_list_menu.xml" value="0.20416666666666666" />

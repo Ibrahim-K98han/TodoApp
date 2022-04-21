@@ -66,11 +66,14 @@
             android:id="@+id/newTodoFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="true"
+            android:layout_centerInParent="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="16dp"
-            android:src="@android:drawable/ic_input_add"
-            android:focusable="true" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_input_add" />
     </RelativeLayout>
 </layout>
