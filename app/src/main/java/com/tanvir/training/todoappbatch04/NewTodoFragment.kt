@@ -16,8 +16,10 @@ import androidx.navigation.fragment.findNavController
 import com.tanvir.training.todoappbatch04.databinding.FragmentNewTodoBinding
 import com.tanvir.training.todoappbatch04.entities.TodoModel
 import com.tanvir.training.todoappbatch04.prefdata.LoginPreference
+import com.tanvir.training.todoappbatch04.scheduletodo.WorkManagerUtils
 import com.tanvir.training.todoappbatch04.viewmodels.TodoViewModel
 import getFormattedDateTime
+import priority_high
 import priority_normal
 import java.util.*
 
@@ -82,6 +84,15 @@ class NewTodoFragment : Fragment() {
                 minute = minute
             )
             todoViewModel.insertTodo(todo)
+            if(priority == priority_high){
+                val currentTime = System.currentTimeMillis()
+                val calendar = Calendar.getInstance()
+                calendar.set(year,month,day,hour,minute)
+                val delay = calendar.timeInMillis - currentTime
+               // Log.d("", "onCreateView: ")
+                WorkManagerUtils(requireContext(), name,delay)
+                    .schedule()
+            }
             findNavController().popBackStack()
         }
         return binding.root
